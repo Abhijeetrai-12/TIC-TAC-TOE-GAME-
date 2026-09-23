@@ -37,9 +37,7 @@ boxes.forEach((box) => {
     }
     box.disabled = true;
     count++;
-
     let isWinner = checkWinner();
-
     if (count === 9 && !isWinner) {
       gameDraw();
     }
@@ -70,7 +68,6 @@ const showWinner = (winner) => {
   msgContainer.classList.remove("hide");
   disableBoxes();
 };
-
 const checkWinner = () => {
   for (let pattern of winPatterns) {
     let pos1Val = boxes[pattern[0]].innerText;
