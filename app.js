@@ -49,13 +49,11 @@ const gameDraw = () => {
   msgContainer.classList.remove("hide");
   disableBoxes();
 };
-
 const disableBoxes = () => {
   for (let box of boxes) {
     box.disabled = true;
   }
 };
-
 const enableBoxes = () => {
   for (let box of boxes) {
     box.disabled = false;
